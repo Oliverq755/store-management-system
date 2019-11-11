@@ -1,0 +1,132 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+$primary-heading-color: #404043;
+$color-white: #ffffff;
+$secondary-grayblue-color: #6b7d97;
+
+body{
+    background: #d1d3d9;
+    margin: 0px !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.margin-0{
+    margin: 0px;
+}
+
+.divider-margin-button-1em{
+    margin-bottom: 1em !important;
+}
+
+
+.heading-color{
+    color: $primary-heading-color;
+}
+
+.background-white{
+    background: $color-white;
+}
+
+.icon-color-white{
+    color: $color-white;
+}
+
+.box-shadow {
+    box-shadow: 0px 0px 5px #797979 !important;
+}
+
+.heading-background-color{
+    background: $secondary-grayblue-color;
+    color: $color-white;
+}
+
+.padding-1em {
+    padding: 1em;
+}
+
+table {
+    width: 100%;
+  }
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.mat-button-focus-overlay {
+    background-color: transparent !important;
+}
+
+.mat-drawer-inner-container {
+    width: 16em !important;
+}
+
+.button-padding-width{
+    padding: 5px !important;
+    width: 12em;
+    background: #4e5a6e;
+    color: #ffffff;
+}
+
+.primary-font-color{
+    color: #4e5a6e
+}
+
+//overwritting the material class of input component
+.custom-input-field{
+    .mat-form-field-wrapper {
+         padding-bottom: 0px;
+    }
+}
+
+.strikethrough{
+    color:red;
+    text-decoration: line-through;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #3d4a61; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2d3f5e; 
+  }
+
+  .primary-button-layout {
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .home-appliances-button {
+    background: #e7f7f3;
+    color: #49c598;
+    font-weight: 600;
+    font-size: 13px;
+  }
+
+  .mobile-category-button {
+    background: #eef1fe;
+    color: #5d78ff;
+    font-weight: 700;
+    font-size: 12px;
+  }
+
+  .warning-button {
+      background: #fff8e8;
+      color: #ffb822;
+      font-weight: 700;
+      font-size: 12px;
+  }

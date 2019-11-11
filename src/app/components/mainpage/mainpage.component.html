@@ -1,0 +1,33 @@
+<div fxLayout="column wrap" fxLayoutAlign="  none" fxShow="true" fxHide="false">
+  <mat-toolbar [ngStyle.xs]="{'height':'64px'}" class="home-toolbar ">
+    <div fxLayout="row wrap" fxFlex="50" fxLayoutAlign="start start" fxShow="true" fxHide="false">
+      <mat-icon style="cursor:pointer" class="material-icons icon-color-white" (click)="toggleSidenav()">
+        {{showSidenav ? 'menu':'clear'}}
+      </mat-icon>
+    </div>
+    <h1 class="icon-color-white" style="font-weight: 700;">STORE MANAGEMENT SYSTEM</h1>
+  </mat-toolbar>
+  <mat-sidenav-container fullscreen="" style="margin-top:64px;">
+    <mat-sidenav class="padding-1em box-shadow home-toolbar" style="padding: 0px;" opened='true' #sidenav mode="side">
+      <div fxLayout="column" style="background: #3d4a61;" fxLayoutAlign="center center">
+        <img style="height: 4em; padding-top: 1em;" src="../../../assets/samung_logo.png">
+        <h3 style="color: white;font-size: 16px;">Samsung Electronics Co. Ltd.</h3>
+      </div>
+      <mat-divider></mat-divider>
+      <div fxLayout="column">
+          <p class="menu-category">Store Stock</p>
+          <p class="menu-sub-items cursor-pointer" fxLayoutAlign="start center" fxLayoutGap="5px" *ngFor="let stockMenu of staticData.storeMenus['Store Stock']"><i class="material-icons">{{stockMenu.iconName}}</i><span>{{stockMenu.categoryViewValue}}</span></p>
+          <p class="menu-category">Home Appliances</p>
+          <p class="menu-sub-items cursor-pointer" fxLayoutAlign="start center" fxLayoutGap="5px" *ngFor="let variableExpenses of staticData.storeMenus['Home Appliances']"><i class="material-icons">{{variableExpenses.iconName}}</i><span>{{variableExpenses.categoryViewValue}}</span></p>
+          <p class="menu-category">Analytics</p>
+          <p class="menu-sub-items cursor-pointer" fxLayoutAlign="start center" fxLayoutGap="5px" *ngFor="let variableExpenses of staticData.storeMenus['Analytics']"><i class="material-icons">{{variableExpenses.iconName}}</i><span>{{variableExpenses.categoryViewValue}}</span></p>
+      </div>
+    </mat-sidenav>
+
+    <mat-sidenav-content class="padding-1em">
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  <div fxLayout="row">
+  </div>
+</div>

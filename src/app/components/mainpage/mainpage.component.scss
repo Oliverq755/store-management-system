@@ -1,0 +1,37 @@
+.home-toolbar{
+    background: #4e5a6e;
+    z-index: 10;
+    box-shadow: 0px 0px 5px;
+}
+
+.menu-buttons {
+    font-size: 14px;
+    padding: 5px;
+}
+
+.menu-icons{
+    font-size: 32px;
+    color: #4e5a6e;
+    margin-right: 10px;
+}
+
+.menu-category {
+    line-height: 3.5em;
+    margin: 0;
+    background: #3d4a61;
+    color: rgba(255,255,255,.5);
+    font-weight: 700;
+    padding-left: 1em;
+}
+
+.menu-sub-items {
+    margin: 0px;
+    color: rgba(255,255,255,.5);
+    padding: 1em;
+}
+
+.menu-sub-items:hover {
+    transition: 0.5s;
+    background: #3d4a61;
+    color: white;
+}

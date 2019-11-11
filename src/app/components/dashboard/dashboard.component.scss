@@ -1,0 +1,28 @@
+.graph-image-height{
+    height: 10em;
+}
+
+.card-heading-padding{
+    padding: 12px 0px;
+    line-height: 1.5em;
+}
+
+.mat-card {
+    padding: 0em 0em 1em 0em;
+}
+
+.expense-table-row:hover{
+    background: #6b7d97;
+    transition: 0.7s;
+    td.mat-cell{
+        color: #ffffff;
+    }
+}
+
+.notice-marquee{
+    background: #4e5a6e;
+    padding: 1em;
+    color: white;
+    font-size: 1em;
+}
+
