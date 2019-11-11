@@ -43,9 +43,9 @@ import { MainpageComponent } from './components/mainpage/mainpage.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { AddproductsComponent } from './components/addproducts/addproducts.component';
 import { from } from 'rxjs';
-import { ExpenseSettingComponent } from './components/expense-setting/expense-setting.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { SellsStockComponent } from './components/sells-stock/sells-stock.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +53,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     MainpageComponent,
     DashboardComponent,
     AddproductsComponent,
-    ExpenseSettingComponent
+    SellsStockComponent,
   ],
   imports: [
     BrowserModule,

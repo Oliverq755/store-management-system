@@ -32,9 +32,6 @@ export class StaticdataService {
     {categoryID: '105', categoryViewValue:'Air Purifier', categoryValue:'airPurifier'},
   ]
 
-  totalBudget = 4560394;
-  totalExpenses = 2343554;
-
   categoryList = [
     {categoryID: 'CAT12', categoryName:'Food'},
     {categoryID: 'CAT11', categoryName:'Grocery'},
@@ -46,10 +43,10 @@ export class StaticdataService {
 
   storeMenus = {
     'Store Stock' : [
-      { catValue: "overview", categoryViewValue: "Overview", iconName:'store'},
-      { catValue: "purchase", categoryViewValue: "Purchase",iconName:'attach_money'},
-      { catValue: "sells", categoryViewValue: "Sells",iconName:'money'},
-      { catValue: "available_stock", categoryViewValue: "Available Stock",iconName:'gradient'},
+      { catValue: "overview", categoryViewValue: "Overview", iconName:'store', routerLink: 'stockOverview'},
+      { catValue: "purchase", categoryViewValue: "Purchase",iconName:'attach_money', routerLink: 'purchaseHistory'},
+      { catValue: "sells", categoryViewValue: "Sells",iconName:'money', routerLink: 'sellsHistory'},
+      { catValue: "available_stock", categoryViewValue: "Available Stock",iconName:'gradient', routerLink: 'availableStock'},
   ],
   'Home Appliances' : [
     { catValue: "tv&av", categoryViewValue: "TV & AV", iconName:'tv'},

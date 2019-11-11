@@ -26,7 +26,6 @@ export class DashboardComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.currentBalance = this.staticData.totalBudget - this.staticData.totalExpenses;
     this.dataSource = new MatTableDataSource(this.staticData.productDetails);
     this.dataSource.paginator = this.paginator;
   }

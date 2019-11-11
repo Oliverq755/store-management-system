@@ -14,9 +14,13 @@
         <h3 style="color: white;font-size: 16px;">Samsung Electronics Co. Ltd.</h3>
       </div>
       <mat-divider></mat-divider>
+      <p class="menu-sub-items cursor-pointer" [routerLink]="['/home/dashboard']" routerLinkActive="active-button"  fxLayoutAlign="start center" fxLayoutGap="5px">
+        <i class="material-icons">dashboard</i>
+        <span>Dashboard</span>
+      </p>
       <div fxLayout="column">
         <p class="menu-category">Store Stock</p>
-        <p class="menu-sub-items cursor-pointer" fxLayoutAlign="start center" fxLayoutGap="5px"
+        <p class="menu-sub-items cursor-pointer" routerLinkActive="router-link-active"  fxLayoutAlign="start center" fxLayoutGap="5px"
           *ngFor="let stockMenu of staticData.storeMenus['Store Stock']"><i
             class="material-icons">{{stockMenu.iconName}}</i><span>{{stockMenu.categoryViewValue}}</span></p>
         <p class="menu-category">Home Appliances</p>

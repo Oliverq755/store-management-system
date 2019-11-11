@@ -86,6 +86,7 @@ table {
 
 ::-webkit-scrollbar {
     width: 5px;
+    display: none;
   }
   
   /* Track */
@@ -132,7 +133,13 @@ table {
   }
 
   .secondary-button {
-    color: #FF5733;
+    color: #009C09;
     font-weight: 700;
     font-size: 12px;
+  }
+
+  .active-button {
+    background: #009C09 !important;
+    color: white !important;
+    outline: none;
   }
