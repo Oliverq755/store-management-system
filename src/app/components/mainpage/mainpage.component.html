@@ -15,16 +15,24 @@
       </div>
       <mat-divider></mat-divider>
       <div fxLayout="column">
-          <p class="menu-category">Store Stock</p>
-          <p class="menu-sub-items cursor-pointer" fxLayoutAlign="start center" fxLayoutGap="5px" *ngFor="let stockMenu of staticData.storeMenus['Store Stock']"><i class="material-icons">{{stockMenu.iconName}}</i><span>{{stockMenu.categoryViewValue}}</span></p>
-          <p class="menu-category">Home Appliances</p>
-          <p class="menu-sub-items cursor-pointer" fxLayoutAlign="start center" fxLayoutGap="5px" *ngFor="let variableExpenses of staticData.storeMenus['Home Appliances']"><i class="material-icons">{{variableExpenses.iconName}}</i><span>{{variableExpenses.categoryViewValue}}</span></p>
-          <p class="menu-category">Analytics</p>
-          <p class="menu-sub-items cursor-pointer" fxLayoutAlign="start center" fxLayoutGap="5px" *ngFor="let variableExpenses of staticData.storeMenus['Analytics']"><i class="material-icons">{{variableExpenses.iconName}}</i><span>{{variableExpenses.categoryViewValue}}</span></p>
+        <p class="menu-category">Store Stock</p>
+        <p class="menu-sub-items cursor-pointer" fxLayoutAlign="start center" fxLayoutGap="5px"
+          *ngFor="let stockMenu of staticData.storeMenus['Store Stock']"><i
+            class="material-icons">{{stockMenu.iconName}}</i><span>{{stockMenu.categoryViewValue}}</span></p>
+        <p class="menu-category">Home Appliances</p>
+        <p class="menu-sub-items cursor-pointer" fxLayoutAlign="start center" fxLayoutGap="5px"
+          *ngFor="let variableExpenses of staticData.storeMenus['Home Appliances']"><i
+            class="material-icons">{{variableExpenses.iconName}}</i><span>{{variableExpenses.categoryViewValue}}</span>
+        </p>
+        <p class="menu-category">Analytics</p>
+        <p class="menu-sub-items cursor-pointer" fxLayoutAlign="start center" fxLayoutGap="5px"
+          *ngFor="let variableExpenses of staticData.storeMenus['Analytics']"><i
+            class="material-icons">{{variableExpenses.iconName}}</i><span>{{variableExpenses.categoryViewValue}}</span>
+        </p>
       </div>
     </mat-sidenav>
 
-    <mat-sidenav-content class="padding-1em">
+    <mat-sidenav-content class="">
       <router-outlet></router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>

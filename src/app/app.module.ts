@@ -41,7 +41,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainpageComponent } from './components/mainpage/mainpage.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { AddexpensesComponent } from './components/addexpenses/addexpenses.component';
+import { AddproductsComponent } from './components/addproducts/addproducts.component';
 import { from } from 'rxjs';
 import { ExpenseSettingComponent } from './components/expense-setting/expense-setting.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -52,7 +52,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     AppComponent,
     MainpageComponent,
     DashboardComponent,
-    AddexpensesComponent,
+    AddproductsComponent,
     ExpenseSettingComponent
   ],
   imports: [
@@ -98,7 +98,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     NgCircleProgressModule.forRoot()
   ],
   providers: [],
-  entryComponents: [AddexpensesComponent],
+  entryComponents: [AddproductsComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

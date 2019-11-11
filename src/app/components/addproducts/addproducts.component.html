@@ -1,0 +1,31 @@
+<div fxLayout="column">
+  <form [formGroup]="addProductForm">
+    <div fxLayout="column" fxLayoutAlign="space-around stretch" fxLayoutGap="10px">
+      <div fxLayout="column" fxLayoutAlign="center center">
+        <h2 class="add-expense-heading primary-font-color">Add New Products Details</h2>
+      </div>
+      <mat-form-field appearance="outline">
+        <mat-label>Item Name</mat-label>
+        <input matInput formControlName="PRODUCT_CATEGORY" placeholder="Expense category">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Product Category</mat-label>
+        <input matInput formControlName="PRODUCT_ITEM_NAME" placeholder="Item name">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Amount</mat-label>
+        <input matInput formControlName="PRODUCT_AMOUNT" placeholder="Amount">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <input matInput formControlName="PRODUCT_DATE" [matDatepicker]="exp_date" readonly (click)="exp_date.open()"
+          placeholder="Choose the expense date">
+        <mat-datepicker-toggle matSuffix [for]="exp_date"></mat-datepicker-toggle>
+        <mat-datepicker #exp_date></mat-datepicker>
+      </mat-form-field>
+      <div fxLayout="row" fxLayoutAlign="space-between center">
+        <button mat-raised-button [disabled]="addProductForm.status=='INVALID'" class="background-white button-padding-width button-padding-width" (click)="addNewExpenses(addProductForm)"><i
+            class="material-icons">add</i>Add Product</button>
+      </div>
+    </div>
+  </form>
+</div>

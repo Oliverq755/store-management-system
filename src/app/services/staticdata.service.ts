@@ -24,6 +24,14 @@ export class StaticdataService {
     {category:'Mobile',itemName:'Galaxy S6 edge+',amount:4500,storeQuantity:'98'}
   ];
 
+  productCategory = [
+    {categoryID: '101', categoryViewValue:'TV & AV', categoryValue:'tv&av'},
+    {categoryID: '102', categoryViewValue:'Refrigerator', categoryValue:'refrigerator'},
+    {categoryID: '103', categoryViewValue:'Cooling Appliances', categoryValue:'coolingAppliances'},
+    {categoryID: '104', categoryViewValue:'Washing Appliances', categoryValue:'WashingAppliances'},
+    {categoryID: '105', categoryViewValue:'Air Purifier', categoryValue:'airPurifier'},
+  ]
+
   totalBudget = 4560394;
   totalExpenses = 2343554;
 

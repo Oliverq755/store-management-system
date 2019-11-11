@@ -1,16 +1,8 @@
-<div fxLayout="column" fxLayoutGap="1em">
-  <div fxFlex="100" fxLayout="row" fxLayoutAlign="space-between center">
-    <div fxFlex="45">
-
-    </div>
-    <div fxFlex="45">
-
-    </div>
+<div fxLayout="column">
+  <div fxFlex="100" fxLayout="row" fxLayoutGap="10px" style="padding: 10px 1em;" fxLayoutAlign="start center">
+      <button mat-stroked-button class="secondary-button">Add Product Category</button>
+      <button mat-stroked-button class="secondary-button" (click)="addNewProduct()">Add Product</button>
   </div>
-  <!-- <div>
-    <button mat-raised-button class="background-white button-padding-width" (click)="addExpenses()"><i
-        class="material-icons">add</i>Add Expenses</button>
-  </div> -->
   <!-- <marquee class="notice-marquee">Chance the ROUTES using the sidenave button to check the result of API result (AFTER ADDING EXPENSE). API called, are not behavioural Subject Instance</marquee> -->
 
   <!-- EXPENSE DETAILS -->
@@ -25,7 +17,9 @@
       <!-- Position Column -->
       <ng-container matColumnDef="category">
         <th mat-header-cell *matHeaderCellDef> Category </th>
-        <td mat-cell *matCellDef="let element"> <span class="primary-button-layout" [ngClass]="{'home-appliances-button': element.category=='Home Appliances', 'mobile-category-button': element.category=='Mobile', 'warning-button': element.category=='Refrigerator'}">{{element.category}}</span> </td>
+        <td mat-cell *matCellDef="let element"> <span class="primary-button-layout"
+            [ngClass]="{'home-appliances-button': element.category=='Home Appliances', 'mobile-category-button': element.category=='Mobile', 'warning-button': element.category=='Refrigerator'}">{{element.category}}</span>
+        </td>
       </ng-container>
 
 
@@ -42,7 +36,8 @@
       </ng-container>
 
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-      <tr mat-row class="expense-table-row" [ngClass]="{ 'strikethrough': ((deleteExpense == 'delete') && (selectedIndex ===j)) }"
+      <tr mat-row class="expense-table-row"
+        [ngClass]="{ 'strikethrough': ((deleteExpense == 'delete') && (selectedIndex ===j)) }"
         *matRowDef="let row;let j =index; columns: displayedColumns;"></tr>
     </table>
 

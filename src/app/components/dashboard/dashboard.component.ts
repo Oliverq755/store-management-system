@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatTableDataSource, MatPaginator, MatDialog } from '@angular/material';
 import { StaticdataService } from 'src/app/services/staticdata.service';
-import { AddexpensesComponent } from '../addexpenses/addexpenses.component';
+import { AddproductsComponent } from '../addproducts/addproducts.component';
 import { BackEndApiService } from 'src/app/services/back-end-api.service';
 
 @Component({
@@ -31,8 +31,8 @@ export class DashboardComponent implements OnInit {
     this.dataSource.paginator = this.paginator;
   }
 
-  addExpenses() {
-    const dialogRef = this.dialog.open(AddexpensesComponent, {
+  addNewProduct() {
+    const dialogRef = this.dialog.open(AddproductsComponent, {
       width: '35%',
     });
   }
